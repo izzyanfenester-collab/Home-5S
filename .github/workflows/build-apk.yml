@@ -1,4 +1,4 @@
-name: Build Rumah Kemas APK
+name: Build Home 5S APK
 
 on:
   workflow_dispatch:
@@ -27,6 +27,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: RumahKemas-APK
+          name: Home5S-APK
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
